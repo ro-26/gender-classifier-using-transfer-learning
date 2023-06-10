@@ -1,16 +1,16 @@
-## Gender-Classification-using-Machine-Learning
-This project is a gender classification system that uses machine learning techniques to predict the gender of individuals based on their facial features. It serves as a demonstration of applying image processing techniques and machine learning algorithms to a real-world problem.
+## Gender-Classifier-using-Transfer-Learning
+This project is a gender classification system implemented using a deep learning neural network trained using a machine learning technique called
+transfer learning. More specifically the pre-trained model that was used to train this network is MobileNetV2.
 
 ### 🚀Features:
-- Utilizes mchine learning models to extract meaningful facial features from images.
-- Trains a gender classification model using a dataset of labeled facial images.
-- Implements image preprocessing techniques for enhancing model performance.
+- Utilizes convolutional neural networks to extract meaningful facial features from images.
+- The pre-trained weights of the base model is unchanged while few outer layers are trained.
+- Implements image augmentation to increase the sensitivity to subtle changes in images.
 - Provides a user-friendly interface to interact with the trained model for gender prediction.
 
 ### 📌Technologies and Libraries Used:
 - Python
-- Pillow for image processing
-- TensorFlow for model training
+- TensorFlow for image processing and building the model
 - Flask for building the user interface
 - HTML, CSS, and JavaScript for web-based interfaces
 
