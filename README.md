@@ -15,7 +15,7 @@ This project is a gender classification system that uses machine learning techni
 - HTML, CSS, and JavaScript for web-based interfaces
 
 ## Installation and Usage:
-1. Clone the repository: git clone [https://github.com/your-username/gender-classification.git](https://github.com/ro-26/gender-classification-using-machine-learning)
+1. Clone the repository: git clone https://github.com/ro-26/gender-classification-using-machine-learning
 2. Create a virtual environment: python -m venv env
 3. Activate the virtual environment: env\Scripts\activate
 4. Install the required dependencies using pip: pip install -r requirements.txt
