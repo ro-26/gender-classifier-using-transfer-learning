@@ -16,12 +16,13 @@ transfer learning. More specifically the pre-trained model that was used to trai
 
 ### 📘Installation and Usage:
 1. Clone the repository: git clone https://github.com/ro-26/gender-classification-using-machine-learning
-2. Create a virtual environment: python -m venv env
-3. Activate the virtual environment: env\Scripts\activate
-4. Install the required dependencies using pip: pip install -r requirements.txt
-5. Set FLASK_APP = app.py
-6. flask run
-7. Access the user interface through a web browser: http://localhost:5000
+2. Use the provided model which is trained with the dataset(https://www.kaggle.com/datasets/cashutosh/gender-classification-dataset) or train your own model using model.ipynb
+3. Create a virtual environment: python -m venv env
+4. Activate the virtual environment: env\Scripts\activate
+5. Install the required dependencies using pip: pip install -r requirements.txt
+6. Set FLASK_APP = app.py
+7. flask run
+8. Access the user interface through a web browser: http://localhost:5000
 
 ### 👨‍💻License:
 This project is licensed under the MIT License. You are free to modify and use the code as per the terms and conditions mentioned in the LICENSE file.
@@ -29,6 +30,5 @@ This project is licensed under the MIT License. You are free to modify and use t
 ### ⛔Disclaimer:
 This project is intended for educational and demonstration purposes only. It is not designed for high-stakes applications and may not be 100% accurate in gender classification.
 
-For more details and implementation examples, please refer to the documentation and code examples in the repository.
 
 
