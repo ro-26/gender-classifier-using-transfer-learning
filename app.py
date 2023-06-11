@@ -15,14 +15,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.models import model_from_json
 from tensorflow.keras.preprocessing import image
 
-
-# Get the current working directory
 cwd = os.getcwd()
 
-# Define the relative paths
 Model_json = os.path.join(cwd, 'GenderClassifier.json')
 Model_weigths = os.path.join(cwd, 'GenderClassifier.h5')
-
 
 
 # Declare a flask app
@@ -37,10 +33,6 @@ def get_ImageClassifierModel():
 
     return model  
 
-def sigmoid(z):
-	return 1/(1 + np.exp(-z))   
-
-
 def model_predict(img_path, model):
     '''
     Prediction Function for model.
@@ -49,12 +41,10 @@ def model_predict(img_path, model):
         model : image classification model
     '''
     im = Image.open(img_path)
-    im = im.resize((80,80))
-    im = ImageOps.grayscale(im)
+    im = im.resize((50,50))
     im = np.array(im)/255
-    im = im.reshape(1,80,80,1)
-    pred = model.predict(im)[0][0]
-    prob = sigmoid(pred)
+    im = im.reshape(1,50,50,3)
+    prob = model.predict(im)[0][0]
     
     return prob
     
